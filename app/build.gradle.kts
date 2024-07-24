@@ -3,6 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+configurations.all {
+    resolutionStrategy {
+        cacheChangingModulesFor(0, "seconds")
+    }
+}
+
 android {
     namespace = "com.example.demowasmandroid"
     compileSdk = 34
@@ -60,8 +66,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("com.dylibso.chicory:runtime:0.0.10")
-//    implementation("com.github.extism:chicory-sdk:main-SNAPSHOT")
-    implementation("com.github.muneale:chicory-sdk:main-SNAPSHOT")
+    implementation("com.github.extism:chicory-sdk:894d22029ea558a3d785f2217458714922971922")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
