@@ -6,11 +6,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.demowasmandroid.ui.theme.DemoWasmAndroidTheme
 import org.extism.chicory.sdk.Manifest
 import org.extism.chicory.sdk.Plugin
 import java.nio.charset.StandardCharsets
